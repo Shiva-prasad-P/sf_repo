@@ -1,0 +1,5 @@
+{% for i in range(1, 11) %}
+    select {{ i }} as number
+    {% if not loop.last %}
+    {% endif %}
+{% endfor %}
